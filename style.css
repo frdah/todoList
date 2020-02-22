@@ -1,0 +1,197 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  background-image: url("imges/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg");
+  background-size: 100%;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0%;
+  align-self: center;
+}
+
+.binClass {
+  width: 20px;
+  height: auto;
+  float: right;
+  opacity: 0.6;
+}
+
+.warningClass {
+  width: 20px;
+  height: auto;
+  float: right;
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
+.addField {
+  height: 55%;
+  width: 50%;
+  padding: 20px 5%;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  border-radius: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.651);
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.addField input,
+.addField select {
+  width: 80%;
+  height: 10%;
+  border-radius: 50px;
+  padding: 2%;
+  font-size: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.addField button {
+  width: 40%;
+  height: 8%;
+  border-radius: 50px;
+  font-size: 80%;
+  background-color: rgb(27, 192, 55);
+  color: white;
+  padding: 2%;
+  border: none;
+}
+
+#filterField {
+  padding: 2%;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  background-color: rgba(255, 255, 255, 0.781);
+  top: 0px;
+  width: 100vw;
+}
+
+#filterField input {
+  border-radius: 5px;
+  height: 90%;
+  padding: 0.2%;
+  color: rgb(27, 192, 55);
+  border: 1px solid rgba(0, 0, 0, 0.384);
+  border: 1px solid rgba(0, 0, 0, 0.384);
+}
+
+input:focus {
+  outline: none;
+}
+
+#todoField {
+  color: rgb(110, 110, 110);
+  width: 90%;
+  padding: 5%;
+  margin-top: 0%;
+  border-radius: 10px;
+  border: solid 5px white;
+  border-color: rgb(255, 255, 255);
+  border: 0px solid rgba(226, 43, 119, 0.144);
+  border-radius: 0 0 40px 40px;
+  background-color: rgba(255, 255, 255, 0.781);
+}
+
+/*p {
+    padding-top: 20px;
+}*/
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li {
+  width: 90%;
+  /*margin: 20px 0px 20px 0px;*/
+  font-size: 19px;
+  text-align: left;
+  padding: 4% 2%;
+  /*background-color: rgba(0, 0, 0, 0.411);*/
+  border-bottom: 1px solid rgb(27, 192, 55);
+  margin-top: 5%;
+}
+
+li:nth-child(even) {
+  border-bottom: 1px solid rgb(118, 27, 192);
+}
+
+#filterField input[type="radio"] {
+  opacity: 0.6;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+.textBox {
+  height: 20px;
+  font-size: 15px;
+  border: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+#openCreateBtn {
+  height: 80px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.651);
+  bottom: 4%;
+  align-self: flex-end;
+  right: 3%;
+  border-radius: 50px;
+  position: fixed;
+  font-size: 300%;
+  color: rgb(110, 110, 110);
+  border: 1px solid rgb(27, 192, 55);
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  main {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 700px) {
+  #filterField {
+    height: 20vh;
+  }
+  #filterField input {
+    height: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .addField {
+    height: 100%;
+    width: 90%;
+    border-radius: 0px;
+  }
+}

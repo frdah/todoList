@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="addField" class=" addField hide">
+        <label for="addTodo">Lägg till en ToDo: </label>
+        <input type="text" id="addTodo" class="textBox" />
+        <input
+          type="date"
+          name="addTodoDate"
+          id="addTodoDate"
+          class="textBox"
+        />
+        <select name="" id="addCategory" class="textBox">
+          <option value="Kategori">Välj Kategori</option>
+          <option value="Läxor">Läxor</option>
+          <option value="Hushållsarbete">Hushållsarbete</option>
+        </select>
+        <button id="addBtn">Lägg till</button>
+      </div>
+
+      <div id="filterField">
+        <label for="search">Sök ToDos:</label>
+        <input type="text" id="search" class="textBox" />
+        <input type="radio" name="filterBtn" id="Alla" />
+        <label for="Alla">Alla</label>
+        <input type="radio" name="filterBtn" id="Läxor" />
+        <label for="Läxor">Läxor</label>
+        <input type="radio" name="filterBtn" id="Hushållsarbete" />
+        <label for="Hushållsarbete">Hushållsarbete</label>
+      </div>
+      <div id="circle"></div>
+      <div id="todoField">
+        <h2>ToDos✓</h2>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </main>
+    <button id="openCreateBtn">+</button>
+    <script src="main.js"></script>
+  </body>
+</html>
